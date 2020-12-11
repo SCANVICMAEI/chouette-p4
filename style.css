@@ -9,7 +9,7 @@ body {
 
 a,
 button {
-    transition: all .3s ease-in-out;
+ 
     outline: none!important;
 }
 
@@ -100,7 +100,7 @@ a:hover {
 }
 
 .d-bloc {
-    color: rgba(255, 255, 255, .7);
+    color:black;
 }
 
 .d-bloc button:hover {
@@ -133,7 +133,7 @@ a:hover {
 .d-bloc h5 a,
 .d-bloc h6 a,
 .d-bloc p a {
-    color: rgba(255, 255, 255, .6);
+    color:black; 
 }
 
 .d-bloc .a-btn:hover,
@@ -150,7 +150,7 @@ a:hover {
 .d-bloc h5 a:hover,
 .d-bloc h6 a:hover,
 .d-bloc p a:hover {
-    color: rgba(255, 255, 255, 1);
+    color: white;
 }
 
 .d-bloc .navbar-toggle .icon-bar {
@@ -285,6 +285,12 @@ a:hover {
 
 #bloc-1-hero h1 {
     font-size: 32px;
+    background-color:#FFA46C;
+    border-radius: 40px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color:black;
+
 }
 
 .navbar {
@@ -334,16 +340,13 @@ a:hover {
 
 .nav > li a:hover,
 .nav > li a:focus {
-    background: transparent;
+    border-bottom:4px solid #ffa46c;
+    background: none;
 }
 
 .navbar-toggle {
     margin: 10px 10px 0 0;
     border: 0px;
-}
-
-.navbar-toggle:hover {
-    background: transparent!important;
 }
 
 .navbar-toggle .icon-bar {
@@ -651,7 +654,7 @@ label,
 a {
     font-family: "helvetica";
     font-weight: 400;
-    color: #575757!important;
+    color:black !important;
 }
 
 .container {
@@ -677,7 +680,7 @@ a {
 }
 
 p {
-    font-size: 11px;
+    font-size: 14px;
 }
 
 .tight-width-whitespace {
@@ -692,7 +695,7 @@ p {
 
 .cta-hero {
     margin-top: 22px;
-    color: #FFFFFF!important;
+    color:#FFFFFF!important;
     text-transform: uppercase;
     padding: 12px 28px 12px 28px;
     font-size: 16px;
@@ -713,7 +716,7 @@ h3 {
     font-size: 15px;
     text-transform: uppercase;
     font-weight: 700;
-    color: #333333!important;
+    color:#333333!important;
 }
 
 .med-width-whitespace {
@@ -722,9 +725,7 @@ h3 {
     box-shadow: 0px 0px 0px #000000;
 }
 
-h1 {
-    color: #333333!important;
-}
+
 
 h4 {
     color: #333333!important;
@@ -736,7 +737,7 @@ h4 {
 }
 
 .white {
-    color: #FFFFFF!important;
+    color: black;
 }
 
 .portfolio-thumb {
@@ -753,7 +754,7 @@ h4 {
 }
 
 .black-background {
-    background-color: rgba(165, 147, 99, 0.7);
+    background-color: rgba(165, 147, 99, 0.9);
     padding: 40px 40px 40px 40px;
 }
 
@@ -771,16 +772,16 @@ h4 {
 }
 
 .bgc-atomic-tangerine {
-    background-color: #F3976C;
+    background-color: #Ffa46c;
 }
 
 .tc-white {
-    color: #F3976C!important;
+    color:black;
 }
 
 .btn-atomic-tangerine {
-    background: #F3976C;
-    color: #FFFFFF!important;
+    background: #ffa46c;
+    color:black!important;
 }
 
 .btn-atomic-tangerine:hover {
@@ -789,7 +790,7 @@ h4 {
 }
 
 .ltc-white {
-    color: #FFFFFF!important;
+    color: black;
 }
 
 .ltc-white:hover {
@@ -811,10 +812,6 @@ h4 {
 
 .bg-dots-bg {
     background-image: url("img/dots-bg.png");
-}
-
-.bg-lines-h2-bg {
-    background-image: url("img/lines-h2-bg.png");
 }
 
 .bg-banniere {
