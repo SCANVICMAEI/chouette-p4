@@ -509,7 +509,7 @@ button {
 }
 
 .form-control {
-    border-color: rgba(0, 0, 0, .1);
+    border-color: black;
     box-shadow: none;
 }
 
@@ -653,7 +653,7 @@ label,
 .btn,
 a {
     font-family: "helvetica";
-    font-weight: 400;
+    font-weight: 500;
     color:black !important;
 }
 
@@ -680,7 +680,7 @@ a {
 }
 
 p {
-    font-size: 14px;
+    font-size: 18px;
 }
 
 .tight-width-whitespace {
@@ -689,7 +689,8 @@ p {
 }
 
 .h1 {
-    font-size: 20px;
+    font-size: 25px;
+    font-weight: 700;
     font-family: "Open Sans";
 }
 
@@ -709,14 +710,15 @@ p {
 
 h2 {
     font-size: 22px;
+    font-weight: 700;
     line-height: 1.4em;
 }
 
 h3 {
-    font-size: 15px;
+    font-size: 17px;
     text-transform: uppercase;
     font-weight: 700;
-    color:#333333!important;
+    color:black;
 }
 
 .med-width-whitespace {
@@ -725,10 +727,17 @@ h3 {
     box-shadow: 0px 0px 0px #000000;
 }
 
-
+.fill{
+    background-color: #ffa46c;
+    border-radius: 40px;
+}
 
 h4 {
     color: #333333!important;
+}
+
+a{
+font-size: 18px;
 }
 
 .icons {
