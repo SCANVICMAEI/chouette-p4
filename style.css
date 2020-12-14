@@ -18,14 +18,6 @@ a:hover {
     cursor: pointer;
 }
 
-#page-loading-blocs-notifaction {
-    position: fixed;
-    top: 0;
-    bottom: 0;
-    width: 100%;
-    z-index: 100000;
-    background: #FFFFFF url("img/pageload-spinner.gif") no-repeat center center;
-}
 
 .bloc {
     width: 100%;
@@ -90,10 +82,7 @@ a:hover {
     right: 0;
 }
 
-.texture-paper::before {
-    background: url("img/texture-paper.png");
-    background-size: 280px 280px;
-}
+
 
 .b-parallax {
     background-attachment: fixed;
@@ -136,21 +125,10 @@ a:hover {
     color:black; 
 }
 
-.d-bloc .a-btn:hover,
-.d-bloc .navbar a:hover,
-.d-bloc .navbar-brand:hover,
-.d-bloc a:hover .icon-sm,
-.d-bloc a:hover .icon-md,
-.d-bloc a:hover .icon-lg,
-.d-bloc a:hover .icon-xl,
-.d-bloc h1 a:hover,
-.d-bloc h2 a:hover,
-.d-bloc h3 a:hover,
-.d-bloc h4 a:hover,
-.d-bloc h5 a:hover,
-.d-bloc h6 a:hover,
-.d-bloc p a:hover {
-    color: white;
+
+.d-bloc a:hover .icon-md{
+border: black solid 4px;
+padding: 4px;
 }
 
 .d-bloc .navbar-toggle .icon-bar {
@@ -249,7 +227,7 @@ a:hover {
 .l-bloc h5 a:hover,
 .l-bloc h6 a:hover,
 .l-bloc p a:hover {
-    color: rgba(0, 0, 0, 1);
+    color: black;
 }
 
 .l-bloc .navbar-toggle .icon-bar {
@@ -340,7 +318,7 @@ a:hover {
 
 .nav > li a:hover,
 .nav > li a:focus {
-    border-bottom:4px solid #ffa46c;
+    border:4px solid #ffa46c;
     background: none;
 }
 
@@ -733,7 +711,7 @@ h3 {
 }
 
 h4 {
-    color: #333333!important;
+    color: black;
 }
 
 a{
@@ -794,8 +772,8 @@ font-size: 18px;
 }
 
 .btn-atomic-tangerine:hover {
-    background: #c27956!important;
-    color: #FFFFFF!important;
+  border: black solid 4px;
+
 }
 
 .ltc-white {
@@ -803,7 +781,7 @@ font-size: 18px;
 }
 
 .ltc-white:hover {
-    color: #cccccc!important;
+    border: black solid 4px;
 }
 
 .ltc-atomic-tangerine {
