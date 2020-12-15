@@ -9,7 +9,6 @@ body {
 
 a,
 button {
- 
     outline: none!important;
 }
 
@@ -18,6 +17,14 @@ a:hover {
     cursor: pointer;
 }
 
+#page-loading-blocs-notifaction {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    z-index: 100000;
+    background: #FFFFFF url("img/pageload-spinner.gif") no-repeat center center;
+}
 
 .bloc {
     width: 100%;
@@ -82,14 +89,17 @@ a:hover {
     right: 0;
 }
 
-
+.texture-paper::before {
+    background: url("img/texture-paper.png");
+    background-size: 280px 280px;
+}
 
 .b-parallax {
     background-attachment: fixed;
 }
 
 .d-bloc {
-    color:black;
+    color: rgba(255, 255, 255, .7);
 }
 
 .d-bloc button:hover {
@@ -124,11 +134,26 @@ a:hover {
 .d-bloc p a {
     color:black; 
 }
+.d-bloc .a-btn:hover,
+.d-bloc .navbar a:hover,
+.d-bloc .navbar-brand:hover,
+.d-bloc a:hover .icon-sm,
+.d-bloc a:hover .icon-md,
+.d-bloc a:hover .icon-lg,
+.d-bloc a:hover .icon-xl,
+.d-bloc h1 a:hover,
+.d-bloc h2 a:hover,
+.d-bloc h3 a:hover,
+.d-bloc h4 a:hover,
+.d-bloc h5 a:hover,
+.d-bloc h6 a:hover,
+.d-bloc p a:hover {
+    color: rgba(255, 255, 255, 1);
+}
 
-
-.d-bloc a:hover .icon-md{
-border-left: black solid 4px;
-padding: 4px;
+.social p
+{
+    color: rgba(255, 255, 255, 0) !important;
 }
 
 .d-bloc .navbar-toggle .icon-bar {
@@ -263,8 +288,9 @@ padding: 4px;
 
 #bloc-1-hero h1 {
     font-size: 32px;
-    background-color:#FFA46C;
-    border-radius: 40px;
+    background-color:#F3976C;
+    opacity: 0.75;
+    border-radius: 10px;
     padding-top: 10px;
     padding-bottom: 10px;
     color:black;
@@ -318,8 +344,8 @@ padding: 4px;
 
 .nav > li a:hover,
 .nav > li a:focus {
-    border:4px solid #ffa46c;
-    background: none;
+  border-top: #F3976C solid 2px;
+  background-color: white;
 }
 
 .navbar-toggle {
@@ -509,6 +535,11 @@ button {
 .showScrollTop {
     font-size: 14px;
     opacity: 1;
+}
+
+.showScrollTop :hover{
+    
+    color: white;
 }
 
 a[data-lightbox] {
@@ -706,13 +737,19 @@ h3 {
 }
 
 .fill{
-    background-color: #ffa46c;
-    border-radius: 40px;
+ border-radius: 10px;
+ background-color: #F3976C;
+ opacity: 0.75;
+ padding-top: 10px;
+ padding-bottom: 10px;
+ padding-right: 0 !important;
+ padding-left: 5px;
 }
 
 h4 {
     color: black;
 }
+
 
 a{
 font-size: 18px;
@@ -747,7 +784,6 @@ font-size: 18px;
 
 .bold-link {
     font-weight: 900;
-    text-decoration: underline!important;
 }
 
 .bgc-white {
@@ -767,13 +803,12 @@ font-size: 18px;
 }
 
 .btn-atomic-tangerine {
-    background: #ffa46c;
+    background: #F3976C;
     color:black!important;
 }
 
 .btn-atomic-tangerine:hover {
-  border: black solid 4px;
-
+    background: #C27956;
 }
 
 .ltc-white {
@@ -781,7 +816,7 @@ font-size: 18px;
 }
 
 .ltc-white:hover {
-    border: black solid 4px;
+    border-bottom: black solid 2px;
 }
 
 .ltc-atomic-tangerine {
@@ -803,6 +838,10 @@ font-size: 18px;
 
 .bg-banniere {
     background-image: url("img/la-chouette-agence-banniere.webp");
+}
+
+.bg-lines-h2-bg {
+    background-image: url("img/lines-h2-bg.png");
 }
 
 .bg-presentation {
@@ -1010,6 +1049,11 @@ font-size: 18px;
         width: 180px;
         height: 320px;
     }
+
+    .nav > li a:hover,
+.nav > li a:focus {
+    background: #F3976C;
+}
 }
 
 @media (max-width: 400px) {
@@ -1017,10 +1061,18 @@ font-size: 18px;
         padding-left: 0;
         padding-right: 0;
     }
+    .nav > li a:hover,
+.nav > li a:focus {
+    background: #F3976C;
+}
 }
 
 @media (max-width: 767px) {
     .bloc-mob-center-text {
         text-align: center;
     }
+    .nav > li a:hover,
+.nav > li a:focus {
+    background: #F3976C;
+}
 }
