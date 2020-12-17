@@ -286,9 +286,10 @@ a:hover {
     padding-left: 0;
 }
 
+
 #bloc-1-hero h1 {
     font-size: 32px;
-    background-color:#F3976C;
+    background-color :rgba(255, 255, 255, .75);
     opacity: 0.75;
     border-radius: 10px;
     padding-top: 10px;
@@ -738,13 +739,10 @@ h3 {
 
 .fill{
  border-radius: 10px;
- background-color: #F3976C;
- opacity: 0.75;
+ background-color: rgba(255, 255, 255, 0.75) !important;
  padding-top: 10px;
  padding-bottom: 10px;
- padding-right: 0 !important;
- padding-left: 5px;
-}
+ }
 
 h4 {
     color: black;
